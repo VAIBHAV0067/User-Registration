@@ -31,6 +31,12 @@ namespace UserRegistration
                         lnamepattern.Checklastname(lname);
                         break;
                     case 3:
+                        Console.WriteLine("Enter Email id :");
+                        string email = Console.ReadLine();
+                        Validation_regex emailpattern = new Validation_regex();
+                        emailpattern.Checkemail(email);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
